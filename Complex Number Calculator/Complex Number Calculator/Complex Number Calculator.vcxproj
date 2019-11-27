@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Complex.h" />
+    <ClInclude Include="DoublyLinked.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
