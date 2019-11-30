@@ -45,7 +45,7 @@ public:
 			head->prev = n;
 			head = n;
 		}
-		std::cout << n->data << " added" << std::endl;
+		//std::cout << n->data << " added" << std::endl;
 
 		size++;
 		//std::cout << "size: " << size << std::endl;
@@ -53,7 +53,7 @@ public:
 	void popFront() //remove node from the beginning of the list
 	{
 		Node<T>* n = head;
-		std::cout << n->data << " deleted " << std::endl;
+		//std::cout << n->data << " deleted " << std::endl;
 		if (head->next != nullptr)
 		{
 			head->next->prev = nullptr;
