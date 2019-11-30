@@ -155,5 +155,10 @@ int gcd(int a, int b)
 //returns the least common multiple of a and b
 int lcm(int a, int b)
 {
-	return a * b / gcd(a, b);
+	int lcm = a * b / gcd(a, b);
+	if (lcm < 0)
+	{
+		lcm = lcm * -1;
+	}
+	return lcm;
 }
