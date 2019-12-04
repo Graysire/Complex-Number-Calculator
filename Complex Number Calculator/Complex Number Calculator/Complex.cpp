@@ -57,12 +57,24 @@ void Complex::setDenominator(int den)
 //returns Complex in the form [real + imaginaryi] / denominator
 std::string Complex::toString() const
 {
-	std::string temp = "[" + std::to_string(re);
-	if (im > -1)
+	int r = re;
+	int i = im;
+	int d = dem;
+	if (r < 0)
+	{
+		r *= -1;
+		i *= -1;
+		d *= -1;
+	}
+
+
+	std::string temp = "[" + std::to_string(r);
+	if (i > -1)
 	{
 		temp += "+";
 	}
-	temp += std::to_string(im) + "i]/" + std::to_string(dem);
+	temp += std::to_string(i) + "i]/";
+	temp += std::to_string(d);
 	return temp;
 
 
